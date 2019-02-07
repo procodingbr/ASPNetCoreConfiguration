@@ -1,0 +1,11 @@
+﻿@inject AppOptions appOptions
+@{
+    ViewData["Title"] = appOptions.ApplicationTitle;
+    ViewData["CopyStart"] = appOptions.CopyrightStartYear;
+}
+
+<div class="text-center">
+    <pre>
+        @ViewData["result"]
+    </pre>
+</div>
